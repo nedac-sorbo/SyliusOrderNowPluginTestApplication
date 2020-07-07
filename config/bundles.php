@@ -57,4 +57,5 @@ return [
         'test' => true,
         'test_cached' => true
     ],
+    Symfony\WebpackEncoreBundle\WebpackEncoreBundle::class => ['all' => true],
 ];
