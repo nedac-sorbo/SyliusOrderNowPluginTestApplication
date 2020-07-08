@@ -30,7 +30,8 @@
             {% endif %}
             <a href="{{ path('sylius_shop_product_show', {'slug': product.slug, '_locale': product.translation.locale}) }}" class="card-link">{{ 'sylius.ui.view_more'|trans }}</a>
             <span class="text-muted sylius-product-price">|</span>
-            <input type="submit" class="btn btn-link" style="padding: 0" value="{{ 'Order' }}"/>
+                                                                {# TODO: Use translation for button text #}
+            <input type="submit" class="btn btn-link" style="padding: 0" value="{{ 'Order' }}" {{ sylius_test_html_attribute('order-now-button-container') }} />
         {{ form_end(cardForm) }}
     </div>
 </div>
